@@ -8,3 +8,7 @@ We provide Figure2_qwen_0.2.pdf, Figure2_qwen_0.4.pdf, Figure2_qwen_0.6.pdf, Fig
 We provide Figure3_qwen_0.2.pdf, Figure3_qwen_0.4.pdf, Figure3_qwen_0.6.pdf, Figure3_qwen_0.8.pdf, and Figure3_qwen_1.0.pdf to observe the influence of changing test data ratios on the results shown in Figure 3 (a) of the submitted manuscript.
 
 These results visualize the stability of the identified information flow pathways across varying data scales.
+
+## The contribution of MLP for the token of following modality and the competitor modality at the last generated position.
+
+Text_Following.pdf representates the MLP contribution for data of Following Text modality and Vision_Following.pdf representates the MLP contribution for data of Following Vision modality.
