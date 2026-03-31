@@ -12,3 +12,4 @@ These results visualize the stability of the identified information flow pathway
 ## The contribution of MLP for the token of following modality and the competitor modality at the last generated position.
 
 Text_Following.pdf representates the MLP contribution for data of Following Text modality and Vision_Following.pdf representates the MLP contribution for data of Following Vision modality.
+MLP contribution refers to calculating the logit difference between the last token before and after passing through MLP and the LLM unembedding space.
