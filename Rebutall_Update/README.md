@@ -13,7 +13,7 @@ Modality instruction is a **semantic instruction** for guiding modality followin
 
 These findings explicitly rule out positional bias, confirming that the modality instruction functions as a genuine semantic anchor rather than a mere positional artifact.
 
-Note, in modality_begin.pdf and modality_middle.pdf, $\\nrightarrow$ Constraint Inst represents that we cut the attention flow from modality cues to system prompt and original constraint.
+Note that in modality_begin.pdf and modality_middle.pdf, $\\nrightarrow$ Constraint Inst represents that we cut the attention flow from modality cues to system prompt and original constraint.
 
 
 ## W1, Reviewer 3Qm7: The causal attention results by varying the ratio of original test data.
