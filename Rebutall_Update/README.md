@@ -1,5 +1,11 @@
 # Rebuttal Update
 
+## Q1, Reviewer do3r: Prove the instruction is a true semantic anchor rather than a positional artifact.
+**Modality instruction** is the **semantic instruction** used to guide MLLMs for modality following. But $S_constrain$ is only used to constrain the output format, **which is not a semantic instruction in modality following setting**. To decouple semantic roles from positional bias, we performe a causal attention analysis to compare the attention flow from modality cues to either modality instruction or $S_{constrain}$ across varying prompt positions. Preliminary experiments indicate that placing the modality instruction at the very beginning of the prompt severely degrades the prefermances of Text Following. Therefore, we move the modality instruction to the middle of the prompt and conduct a control study by **swapping the relative order of the modality instruction and $S_{constrain}$**. 
+
+The results are provided in **modality_pre_constraint.pdf** and **modality_post_constraint.pdf**. We observe that regardless of the instruction's position, **blocking attention from modality cues to the modality instruction results in a significant decline for modality-following**. In contrast, **blocking attention to $S_{constrain}$ has almost no impact**. These findings explicitly rule out positional bias, confirming that the modality instruction functions as a genuine semantic anchor rather than a mere positional artifact.
+
+
 ## W1, Reviewer 3Qm7: The causal attention results by varying the ratio of original test data.
 
 1. The causal attention results by varying the ratio of test data (Figure 2)
