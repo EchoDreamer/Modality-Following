@@ -1,5 +1,10 @@
 # Rebuttal Update
 
+## Q1, Reviewer obWf: Additional Evidence on MoE-based Generalization
+Building on the suggestion to provide a brief qualitative discussion, we further conducted causal attention analysis on an MoE-based model (DeepSeek-VL2-Tiny). 
+
+The results in Fig3_deepseekvl2-tiny.pdf show that the **fundamental mechanistic conclusions of instruction anchors remain highly consistent with those observed in dense models**. This provides direct empirical evidence that our findings generalize not only across larger scales, but also to MoE-based MLLMs.
+
 ## Q1, Reviewer do3r: Prove the instruction is a true semantic anchor rather than a positional artifact.
 
 Modality instruction is a **semantic instruction** for guiding modality following, whereas $S_{constrain}$ only restricts output format and plays no semantic role in this setting. In the original input, modality instruction precedes $S_{constrain}$. To verify its semantic role, we conducted three control studies:
