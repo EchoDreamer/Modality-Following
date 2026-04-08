@@ -1,5 +1,12 @@
 # Rebuttal Update
 
+## Reviewer 3Qm7: Where do failures occur for modality following?
+We conduct a failure-case analysis for modality following. And the results as follows:
+- (1) shallow transfer remains intact, with modality cues still accumulating at instruction tokens during shallow layers (stage1.pdf);
+- (2) deep arbitration fails, as attention contributes little or even negatively to modality following during deep layers (stage2.pdf).
+Overall, failures are primarily attributed to **insufficient deep arbitration**.
+
+
 ## Q1, Reviewer obWf: Additional Evidence on MoE-based Generalization
 Building on the suggestion to provide a brief qualitative discussion, we further conducted causal attention analysis on an MoE-based model (DeepSeek-VL2-Tiny). 
 
